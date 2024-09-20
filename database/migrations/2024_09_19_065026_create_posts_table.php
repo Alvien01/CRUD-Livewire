@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('kategori');
             $table->text('content');
             $table->string('slug');
+            $table->string('image')->nullable(); // Tambahkan kolom image
             $table->smallInteger('status');
             $table->timestamps();
         });
