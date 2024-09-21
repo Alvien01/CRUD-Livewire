@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Post;
+use App\Models\Kategori;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,9 @@ use App\Livewire\Post;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('kategori', function () {
+    return view('livewire.kategori');
+});
+
+
 

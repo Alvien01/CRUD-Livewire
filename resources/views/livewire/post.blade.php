@@ -50,11 +50,12 @@
                                 <td>{{ $post->kategori }}</td>
                                 <td>{{ $post->content }}</td>
                                 <td>
-                                    @if($post->image)
-                                        <img src="{{ asset('storage/' . $post->image) }}" alt="Image" width="100">
-                                    @else
-                                        No Image
-                                    @endif
+                                @if($post->image)
+                                    <img src="{{ asset('storage/' . $post->image) }}" alt="Image" width="100">
+                                @else
+                                    No Image
+                                @endif
+
                                 </td>
                                 <td>{{ $post->status == 1 ? 'Publish' : 'Draft' }}</td>
                                 <td>

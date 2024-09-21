@@ -13,11 +13,11 @@
         @endif
 
         @if($addPost)
-            @include('livewire.create')
+            @include('livewire.kategori-create')
         @endif
 
         @if($updatePost)
-            @include('livewire.update')
+            @include('livewire.kategori-update')
         @endif
     </div>
 
